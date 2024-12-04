@@ -8,17 +8,17 @@ body {
     width: 100%;
     background-color: hsl(30, 54%, 90%);
     box-sizing: border-box;
-    padding: 20px 0px;
-    font-family: serif;
+    padding: 20px 10px;
+    font-family: sans-serif;
 }
 
 .main-container {
     max-width: 800px;
-    margin: auto;
     box-sizing: border-box;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 20px 0px;
+    padding: 20px 10px;
+    margin: auto;
 }
 
 .main-container>div, .main-container>div>div {
@@ -27,7 +27,7 @@ body {
 }
 
 .bg-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1{
@@ -59,9 +59,12 @@ padding-bottom: 10px;
 
 
 .ingredient{
-    margin: 10px 0px;
+    padding: 10px 15px;
 }
 
+.instruction{
+    padding: 10px 15px;
+}
 li{
     font-size: 16px;
     padding-bottom: 5px;
