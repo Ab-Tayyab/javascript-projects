@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Forms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="form-container" id="loginForm">
+      <h2>Login Form</h2>
+      <form action="" id="login-form">
+        <div>
+          <label for="">Email</label>
+          <input class="login-email" type="text" placeholder="Email...">
+          <label for="" class="login-email-error login-error-msg"></label> <br>
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input class="login-password" type="text" placeholder="Password...">
+          <label for="" class="login-password-error login-error-msg"></label> <br>
+        </div>
+        <div class="login-checkbox">
+          <input type="checkbox" id="loginPasswordChekcbox" name="loginPasswordChekcbox" value="value1">
+          <label for="loginPasswordChekcbox">Show Password</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <span class="toggle-btn">Don't have an account? <span id="showSignup"> Sign up</span></span>
+    </div>
+    <div class="form-container hidden" id="signupForm">
+      <h2>Signup Form</h2>
+      <form action="" id="signup-form">
+        <div class="signupForm-name">
+          <label for="">First Name</label>
+          <input class="signupForm-fName" type="text" placeholder="Name...">
+          <label for="" class="fName-error error-msg"></label> <br>
+          <label for="">Last Name</label>
+          <input class="signupForm-lName" type="text" placeholder="Name...">
+          <label for="" class="lName-error error-msg"></label> <br>
+        </div>
+        <div>
+          <label for="">Email</label>
+          <input class="signupForm-email" type="text" placeholder="Email...">
+          <label for="" class="email-error error-msg"></label> <br>
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input class="signup-fPassword" type="text" placeholder="Password...">
+          <label for="" class="fPassword-error error-msg"></label> <br>
+          <label for="">Re-Enter Password</label>
+          <input class="signup-rPassword" type="text" placeholder="Password...">
+          <label for="" class="rPassword-error error-msg"></label> <br>
+        </div>
+
+        <div class="signup-checkbox">
+          <input type="checkbox" id="signupPasswordCheckbox" name="signupPasswordCheckbox" value="value1">
+          <label for="signupPasswordCheckbox">Show Password</label>
+        </div>
+        <button>Sign Up</button>
+      </form>
+      <span class="toggle-btn">Already have an account? <span id="showLogin">Login</span></span>
+    </div>
+  </div>
+
+  <script src="toggle.js"></script>
+  <script src="login.js"></script>
+  <script src="signup.js"></script>
+
+</body>
+
+</html>

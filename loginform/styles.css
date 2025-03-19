@@ -1,0 +1,111 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url('./bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 0px 50px 20px 50px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.toggle-btn {
+  margin-top: 10px;
+  display: block;
+  color: rgb(117, 117, 117);
+  text-align: center;
+  font-weight: 800;
+}
+
+.toggle-btn>span {
+  color: white;
+  cursor: pointer;
+}
+
+#loginForm,
+#signupForm {
+  background-color: transparent;
+  color: white;
+}
+
+#loginForm h2,
+#signupForm h2 {
+  text-align: center;
+}
+
+#loginForm input,
+#signupForm input {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid rgb(174, 174, 174);
+  caret-color: white;
+  font-size: 14px;
+  background: transparent;
+  color: white;
+}
+
+#loginForm input:focus,
+#signupForm input:focus {
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+#loginForm button,
+#signupForm button {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(254, 42, 42, 0.751);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#loginForm button:hover,
+#signupForm button:hover {
+  background-color: red;
+  transition: ease-in-out .5s;
+}
+
+.error-msg,
+.login-error-msg {
+  color: red;
+  font-size: 12px;
+}
+
+.login-checkbox,
+.signup-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#loginPasswordChekcbox,
+#signupPasswordCheckbox {
+  width: 18px !important;
+  height: 18px !important;
+  cursor: pointer;
+}
